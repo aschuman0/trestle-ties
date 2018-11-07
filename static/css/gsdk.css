@@ -19,7 +19,7 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, a, .td-name, td {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue","Open Sans",Arial,sans-serif; }
+  font-family: "Cardo","Open Sans",Arial,sans-serif; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-weight: 400;
@@ -82,7 +82,7 @@ h1 .subtitle {
 
 /*     General overwrite     */
 body {
-  font-family: "Helvetica Neue","Open Sans",Arial,sans-serif; }
+  font-family: "Cardo","Open Sans",Arial,sans-serif; }
 
 .main {
   background-color: #FFFFFF;
@@ -161,6 +161,13 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .ct-red.checkbox.checked,
 .ct-red.radio.checked {
   color: #FF3B30; }
+
+.ct-grey,
+.ct-grey.checkbox.checked .second-icon,
+.ct-grey.radio.checked .second-icon,
+.ct-grey.checkbox.checked,
+.ct-grey.radio.checked {
+  color: #FF9500; }
 
 input.ct-blue + span.switch-left,
 input.ct-blue + span + label + span.switch-right {
@@ -1389,6 +1396,9 @@ input.ct-red + span + label + span.switch-right {
 
 .navbar-ct-red {
   background-color: rgba(255, 76, 64, 0.98); }
+
+.navbar-ct-grey {
+  background-color: rgba(160, 160, 160, 0.90); }
 
 .navbar-transparent {
   padding-top: 15px;
