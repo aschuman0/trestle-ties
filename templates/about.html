@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Hello{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="container tim-container" style="max-width:800px; padding-top:100px">
+    <div class="row tim-row">
+        <div class="col">
+            <h1 class="text-center">About</h1>
+        </div>
+    </div>
+    <div class="row">
+    <h3>Our Mission</h3>
+        <p>Trestle Ties mission is to create a bridge for emerging writers. We want to create a safe place for words to live, create and foster new ideas. We chose Trestle Ties because trestle ties are what keep bridges together and our mission is to create community and trestle ties keep bridges sturdy.</p>
+    </div>
+   <div class="row tim-row">
+       <div class="col tim-col"><h3>About Us</h3></div>
+   </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-5">
+            <img src="/img/juleen.jpg">
+        </div>
+       <p><strong>Juleen Eun Sun Johnson</strong> was born in Seoul, South Korea. She was adopted and taken to Valdez, Alaska. Johnson earned an MFA from PNCA in Visual Art. She&#39;s currently an MFA candidate in Poetry at University of Massachusetts Amherst. Johnson is a MacDowell Colony Fellow. Johnson currently writes and creates art in Massachusetts. <br />More at <a href="http://juleenj.com." target="_blank">her website.</a></p>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-5">
+            <img src="/img/aaron.jpg">
+        </div>
+  <p><strong>Aaron Schuman</strong> is a bad nerd. His primary work is done in code, which expresses itself in a variety of media including sound, text and image. He is also a violist and host of Shadow Journal Radio. While he's a west coast boy at heart, he currently yells at computers in the woods of Western Massachusetts.<br />Find more at <a href="http://aschuman.net/" target="_blank">his website.</a></p>
+   </div>
+</div>
+<div class="space"></div>
+{% endblock %}

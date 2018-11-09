@@ -355,18 +355,14 @@
 .blurred-container .motto{
     color: #FFFFFF;
     font-size: 76px;
-    font-weight: 600;
-
     text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
-    text-transform: uppercase;
-    top: 100px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.66);
+    top: 200px;
     z-index: 3;
-
     display: block;
     margin: 0 auto;
     position: relative;
-    width: 306px;
+    width: 700px;
     height: 0;
 }
 .blurred-container .motto .border{

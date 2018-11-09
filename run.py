@@ -1,10 +1,19 @@
 from flask import Flask, render_template
 
 app = Flask(__name__, static_url_path='')
+app.url_map.strict_slashes = False
 
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/submissions')
+def submissions():
+    return render_template('submissions.html')
 
 @app.errorhandler(404)
 def not_found(error):
