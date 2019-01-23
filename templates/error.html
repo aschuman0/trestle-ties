@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% import "mission.html" as mission %}
+{% block title %}Error{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="container tim-container" style="max-width:800px; padding-top:100px">
+   <h1 class="text-center">{{ error }}</h1>
+    <p class="text-center">We're sorry, something bad happened. Please try again.</p>
+</div>
+<div class="space"></div>
+{% endblock %}

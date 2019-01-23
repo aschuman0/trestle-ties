@@ -27,15 +27,15 @@ def issue_one():
 def issue_one_credits():
     return render_template('issues/one_credits.html')
 
-# @app.errorhandler(404)
-# def not_found(error):
-#     error = 'Page Not Found'
-#     return render_template('error.html', error=error)
-#
-# @app.errorhandler(500)
-# def server_error(error):
-#     error = 'Server Error'
-#     return render_template('error.html', error=error)
+@app.errorhandler(404)
+def not_found(error):
+    error = 'Page Not Found'
+    return render_template('error.html', error=error)
+
+@app.errorhandler(500)
+def server_error(error):
+    error = 'Server Error'
+    return render_template('error.html', error=error)
 
 if __name__ == '__main__':
     app.run()
