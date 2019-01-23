@@ -23,9 +23,9 @@ def issue_index():
 def issue_one():
     return render_template('issues/one.html')
 
-@app.route('/issues/one/credits')
-def issue_one_credits():
-    return render_template('issues/one_credits.html')
+@app.route('/issues/one/contributors')
+def issue_one_contributors():
+    return render_template('issues/one_contributors.html')
 
 @app.errorhandler(404)
 def not_found(error):
