@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Trestle Ties Issues{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="container tim-container" style="max-width:800px; padding-top:100px">
+   <h1 class="text-center">Issues</h1>
+   <h2><a href="{{ url_for('issue_one') }}">Issue One</a> - Debut</h2>
+   <p>Issue One Credits</p>
+</div>
+<div class="space"></div>
+{% endblock %}
