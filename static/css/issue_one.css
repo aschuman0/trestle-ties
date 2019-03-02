@@ -5,7 +5,7 @@ body, html {
   font-family: 'Cardo', serif;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -14,18 +14,54 @@ body, html {
   background-size: cover;
 
 }
+
 .bgimg-1 {
-  background-image: url("/img/one/bg1.jpg");
+  background-image: url("/img/one/01.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("/img/one/bg2.jpg");
+  background-image: url("/img/one/02.jpg");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("/img/one/bg3.jpg");
+  background-image: url("/img/one/03.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("/img/one/04.jpg");
+  min-height: 400px;
+}
+
+.bgimg-5 {
+  background-image: url("/img/one/05.jpg");
+  min-height: 400px;
+}
+
+.bgimg-6 {
+  background-image: url("/img/one/06.jpg");
+  min-height: 400px;
+}
+
+.bgimg-7 {
+  background-image: url("/img/one/07.jpg");
+  min-height: 400px;
+}
+
+.bgimg-8 {
+  background-image: url("/img/one/08.jpg");
+  min-height: 400px;
+}
+
+.bgimg-9 {
+  background-image: url("/img/one/09.jpg");
+  min-height: 400px;
+}
+
+.bgimg-10 {
+  background-image: url("/img/one/10.jpg");
   min-height: 400px;
 }
 
