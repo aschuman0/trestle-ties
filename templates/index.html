@@ -4,6 +4,9 @@
 {% block content %}
 {{ super() }}
 <div class="container tim-container" style="max-width:800px; padding-top:100px">
+   <h2 class="text-center"><a href="{{ url_for('issue_one') }}">Issue One is Live!</a></h2>
+   <h2 class="text-center"><a href="{{ url_for('submissions') }}">Issue Two submissions are open</a></h2>
+   <br />
    <h1 class="text-center">A Landscape of Emergence</h1>
    {{ mission }}
 </div>
