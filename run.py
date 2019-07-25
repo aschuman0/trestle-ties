@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 
 app = Flask(__name__, static_url_path='')
 app.url_map.strict_slashes = False
@@ -31,6 +31,28 @@ def issue_one():
 @app.route('/issues/one/contributors')
 def issue_one_contributors():
     return render_template('issues/one/contributors.html')
+
+
+@app.route('/issues/two')
+def issue_two():
+    return render_template('issues/two/index.html')
+
+
+@app.route('/issues/two/<name>')
+def issue_two_page(name):
+    template_map = {
+        'test': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/ann_halvorsen.html'
+        }
+    }
+    if name in template_map.keys():
+        return render_template('issues/two/poem_page.html',
+                               img=template_map[name]['img'],
+                               page=template_map[name]['page']
+                               )
+    else:
+        abort(404)
 
 
 @app.errorhandler(404)
