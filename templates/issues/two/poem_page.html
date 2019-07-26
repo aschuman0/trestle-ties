@@ -1,2 +1,10 @@
-{{ page }}<br />
-{{ img }}
+{% import "{{ page }}"  as page_content %}
+{% import "{{ img }}" as img_url %}
+<html>
+<head>
+    <title>This is a poem</title>
+</head>
+    <body>
+        {{ page_content }}
+    </body>
+</html>
