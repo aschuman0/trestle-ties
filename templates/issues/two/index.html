@@ -1,1 +1,52 @@
-this is the ibndex
+{% import "mission.html" as mission %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--     Font Awesome     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet" type='text/css'>
+
+    <!-- my custom css -->
+    <link href="/css/issue_two.css" rel="stylesheet" type="text/css" />
+
+    <title>Trestle Ties - Issue Two</title>
+    {% block header %}
+    {% endblock %}
+</head>
+<body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="container">
+          <div class="inner cover">
+            <h1>Trestle Ties - Issue Two </h1>
+            <div class="scrolling-wrapper-flexbox">
+              <div class="card"><h2>thisissome very long text</h2></div>
+              <div class="card"><h2>thisissome very long text</h2></div>
+              <div class="card"><h2>thisissome very long text</h2></div>
+              <div class="card"><h2>thisissome very long text</h2></div>
+              <div class="card"><h2>thisissome very long text</h2></div>
+              <div class="card"><h2>Card</h2></div>
+              <div class="card"><h2>Card</h2></div>
+              <div class="card"><h2>Card</h2></div>
+              <div class="card"><h2>Card</h2></div>
+              <div class="card"><h2>Card</h2></div>
+              <div class="card"><h2>Card</h2></div>
+              <div class="card"><h2>Card</h2></div>
+              <div class="card"><h2>Card</h2></div>
+              <div class="card"><h2>Card</h2></div>
+            </div>
+            <p class="lead">{{ mission }}</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</body>
+</html>
