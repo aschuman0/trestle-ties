@@ -97,6 +97,10 @@ def issue_two_page(name):
             'img': '/img/two/bw_test_bg.png',
             'page': 'issues/two/zachery_elbourne.html'
         },
+        'theodore_blackshear_bowen': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/theodore_blackshear_bowen.html'
+        }
     }
     if name in template_map.keys():
         return render_template(template_map[name]['page'],
