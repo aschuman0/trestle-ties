@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet" type='text/css'>
+    <link href="/css/issue_two_poem.css" rel="stylesheet" type="text/css" />
+    <title>Trestle Ties - Issue Two - {% block title %}{% endblock %}</title>
+    <style>
+        #poem-banner {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+            background-image: url({{ img }});
+        }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+        <div id="poem-banner" class="center-text">
+            <h1 class="display-1">{% block name %}{% endblock %}</h1>
+        </div>
+        <div id="poem-content" class="shadow-lg p-3 mb-5 bg-black rounded">
+            <div class="container">
+                {% block poems %}
+                {% endblock %}
+                <div id="poem-footer" class="center-text">
+                <div id="container">
+                    <hr>
+                    {% block bio %}
+                    {% endblock %}
+                    <br />
+                    <h4><a href={{ url_for('issue_two') }}>Return to Issue Two</a></h4>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
