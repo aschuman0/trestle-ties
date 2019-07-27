@@ -41,15 +41,66 @@ def issue_two():
 @app.route('/issues/two/<name>')
 def issue_two_page(name):
     template_map = {
-        'test': {
+        'ann_halvorsen': {
             'img': '/img/two/bw_test_bg.png',
             'page': 'issues/two/ann_halvorsen.html'
-        }
+        },
+        'benjamin_juitt': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/benjamin_juitt.html'
+        },
+        'chris_salveson': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/chris_salveson.html'
+        },
+        'eliot_cardinaux': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/elliot_cardinaux.html'
+        },
+        'emilie_menzel': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/emilie_menzel.html'
+        },
+        'gerard_sarnat': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/gerard_sarnat.html'
+        },
+        'laurie_kolp': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/laurie_kolp.html'
+        },
+        'margaret_foley': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/margaret_foley.html'
+        },
+        'robert_okaji': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/robert_okaji.html'
+        },
+        'shriram_sivaramakrishnan': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/shriram_sivaramakrishnan.html'
+        },
+        'sonya_lara': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/sonya_lara.html'
+        },
+        'tara_dasso': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/tara_dasso.html'
+        },
+        'william_doreski': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/william_doreski.html'
+        },
+        'zachery_elbourne': {
+            'img': '/img/two/bw_test_bg.png',
+            'page': 'issues/two/zachery_elbourne.html'
+        },
     }
     if name in template_map.keys():
-        return render_template('issues/two/poem_page.html',
-                               img=template_map[name]['img'],
-                               page=template_map[name]['page']
+        return render_template(template_map[name]['page'],
+                               img=template_map[name]['img']
                                )
     else:
         abort(404)
