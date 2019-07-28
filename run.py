@@ -42,79 +42,79 @@ def issue_two():
 def issue_two_page(name):
     template_map = {
         'ann_halvorsen': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/halvorsen.jpg',
             'page': 'issues/two/ann_halvorsen.html',
             'theme': 'light'
         },
         'benjamin_juitt': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/juitt.jpg',
             'page': 'issues/two/benjamin_juitt.html',
-            'theme': 'dark'
+            'theme': 'light'
         },
         'chris_salveson': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/salveson.jpg',
             'page': 'issues/two/chris_salveson.html',
             'theme': 'dark'
         },
         'eliot_cardinaux': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/cardinaux.jpg',
             'page': 'issues/two/elliot_cardinaux.html',
             'theme': 'dark'
         },
         'emilie_menzel': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/menzel.jpg',
             'page': 'issues/two/emilie_menzel.html',
-            'theme': 'dark'
+            'theme': 'light'
         },
         'gerard_sarnat': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/sarnat.jpg',
             'page': 'issues/two/gerard_sarnat.html',
             'theme': 'dark'
         },
         'laurie_kolp': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/kolp.jpg',
             'page': 'issues/two/laurie_kolp.html',
-            'theme': 'dark'
+            'theme': 'light'
         },
         'margaret_foley': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/foley.jpg',
             'page': 'issues/two/margaret_foley.html',
             'theme': 'dark'
         },
         'robert_okaji': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/okaji.jpg',
             'page': 'issues/two/robert_okaji.html',
             'theme': 'dark'
         },
         'shriram_sivaramakrishnan': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/sivaramakrishnan.jpg',
             'page': 'issues/two/shriram_sivaramakrishnan.html',
-            'theme': 'dark'
+            'theme': 'light'
         },
         'sonya_lara': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/lara.jpg',
             'page': 'issues/two/sonya_lara.html',
             'theme': 'dark'
         },
         'tara_dasso': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/dasso.jpg',
             'page': 'issues/two/tara_dasso.html',
-            'theme': 'dark'
+            'theme': 'light'
         },
         'william_doreski': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/doreski.jpg',
             'page': 'issues/two/william_doreski.html',
-            'theme': 'dark'
+            'theme': 'light'
         },
         'zachery_elbourne': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/elbourne.jpg',
             'page': 'issues/two/zachery_elbourne.html',
-            'theme': 'dark'
+            'theme': 'light'
         },
         'theodore_blackshear_bowen': {
-            'img': '/img/two/bw_test_bg.png',
+            'img': '/img/two/theo.jpg',
             'page': 'issues/two/theodore_blackshear_bowen.html',
-            'theme': 'dark'
+            'theme': 'light'
         }
     }
 
