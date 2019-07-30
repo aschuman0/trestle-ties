@@ -118,8 +118,8 @@ def issue_two_page(name):
         }
     }
 
-    light_style_url = '/css/issue_two_poem_light.css'
-    dark_style_url = '/css/issue_two_poem_dark.css'
+    light_style_url = '/css/issue_two_light_book.css'
+    dark_style_url = '/css/issue_two_dark_book.css'
 
     if name in template_map.keys():
 
