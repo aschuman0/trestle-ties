@@ -1,0 +1,33 @@
+{% extends "base-bs4.html" %}
+{% block title %}{ super () }{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="row">
+    <div class="col">
+        <h1 class="text-left">&nbsp;&nbsp;{% block name %}{% endblock %}</h1>
+    </div>
+</div>
+<div class="row flex-column-reverse flex-xl-row">
+    <div class="col-xl-1"></div>
+    <div class="col-xl-5 text-nowrap">
+        <br />
+        {% block poems %}
+        {% endblock %}
+    </div>
+    <div class="col-xl-6">
+        <img src="img/three/{% block image %}{% endblock %}" class="img-fluid" style="z-index: 0;">
+    </div>
+</div>
+<div class="row justify-content-center align-bottom">
+    <div class="col col-10">
+        <br />
+        <br />
+        <hr />
+        {% block bio %}
+        {% endblock %}
+        <br />
+        <a href="#">Back to Issue Three</a>
+        <br />
+    </div>
+</div>
+{% endblock %}

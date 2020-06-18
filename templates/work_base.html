@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{ super () }{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="container tim-container" style="max-width:800px; padding-top:100px">
+   <h1 class="text-center">{% block name %}{% endblock %}</h1>
+   {% block poems %}
+   {% endblock %}
+   <hr />
+   <h2>Bio</h2>
+   {% block bio %}
+   {% endblock %}
+</div>
+<div class="space"></div>
+</div>
+{% endblock %}
