@@ -135,6 +135,70 @@ def issue_two_page(name):
         abort(404)
 
 
+@app.route('/issues/three')
+def issue_three():
+    return render_template('issues/three/index.html')
+
+
+@app.route('/issues/three/<name>')
+def issue_three_page(name):
+    image_num = '4'
+    template_map = {
+        'thompkins': {
+            'template_url': 'simone.html',
+            'image_num': image_num
+        },
+        'marshall': {
+            'template_url': 'marshall.html',
+            'image_num': image_num
+        },
+        'brems': {
+            'template_url': 'brems.html',
+            'image_num': image_num
+        },
+        'choudhury': {
+            'template_url': 'choudhury.html',
+            'image_num': image_num
+        },
+        'fabian': {
+            'template_url': 'fabian.html',
+            'image_num': image_num
+        },
+        'gallagher': {
+            'template_url': 'gallagher.html',
+            'image_num': image_num
+        },
+        'lapinel': {
+            'template_url': 'lapinel.html',
+            'image_num': image_num
+        },
+        'lee': {
+            'template_url': 'lee.html',
+            'image_num': image_num
+        },
+        'sayeed': {
+            'template_url': 'sayeed.html',
+            'image_num': image_num
+        },
+        'sibra': {
+            'template_url': 'sibra.html',
+            'image_num': image_num
+        },
+        'zimmerman': {
+            'template_url': 'zimmerman.html',
+            'image_num': image_num
+        }
+    }
+    if name not in template_map.keys():
+        abort(404)
+
+    page_info = template_map.get(name)
+
+    return render_template(f'issues/three/{page_info.get("template_url")}',
+                           img_num=page_info.get("image_num")
+                           )
+
+
 @app.errorhandler(404)
 def not_found(error):
     error = 'Page Not Found'

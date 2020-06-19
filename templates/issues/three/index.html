@@ -4,8 +4,7 @@
 {{ super() }}
 <div class="row">
     <div class="col-lg-7 offset-lg-4">
-        <img src="img/three/10.png" class="img-fluid">
-
+        <img src="/img/three/10.png" class="img-fluid">
     </div>
 </div>
 <div class="row">
@@ -17,17 +16,17 @@
         <br />
         <h4>Contributors:</h4>
         <ul style="list-style-type:none;">
-            <li><a href="#">Marianne Brems</a></li>
-            <li><a href="#">Bibekananda Choudury</a></li>
-            <li><a href="#">R. Gerry Fabian</a></li>
-            <li><a href="#">Dan Gallagher</a></li>
-            <li><a href="#">J.L. Lapinel</a></li>
-            <li><a href="#">Edward Lee</a></li>
-            <li><a href="#">Laura S. Marshall</a></li>
-            <li><a href="#">Iftekhar Sayeed</a></li>
-            <li><a href="#">Steve Sibra</a></li>
-            <li><a href="#">Thomas Zimmerman</a></li><br />
-            <li><a href="#">Art By Simone Thompkins</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='brems') }}">Marianne Brems</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='choudhury') }}">Bibekananda Choudhury</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='fabian') }}">R. Gerry Fabian</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='gallagher') }}">Dan Gallagher</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='lapinel') }}">J.L. Lapinel</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='lee') }}">Edward Lee</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='marshall') }}">Laura S. Marshall</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='sayeed') }}">Iftekhar Sayeed</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='sibra') }}">Steve Sibra</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='zimmerman') }}">Thomas Zimmerman</a></li><br />
+            <li><a href="{{ url_for('issue_three_page', name='thompkins') }}">Art By Simone Thompkins</a></li>
         </ul>
     </div>
 </div>

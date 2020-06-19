@@ -15,7 +15,7 @@
         {% endblock %}
     </div>
     <div class="col-xl-6">
-        <img src="img/three/{% block image %}{% endblock %}" class="img-fluid" style="z-index: 0;">
+        <img src="/img/three/{% block image %}{% endblock %}" class="img-fluid" style="z-index: 0;">
     </div>
 </div>
 <div class="row justify-content-center align-bottom">
@@ -26,7 +26,7 @@
         {% block bio %}
         {% endblock %}
         <br />
-        <a href="#">Back to Issue Three</a>
+        <a href="{{ url_for('issue_three') }}">Back to Issue Three</a>
         <br />
     </div>
 </div>
