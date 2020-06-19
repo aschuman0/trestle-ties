@@ -142,51 +142,50 @@ def issue_three():
 
 @app.route('/issues/three/<name>')
 def issue_three_page(name):
-    image_num = '4'
     template_map = {
         'thompkins': {
             'template_url': 'simone.html',
-            'image_num': image_num
+            'image_num': '1'
         },
         'marshall': {
             'template_url': 'marshall.html',
-            'image_num': image_num
+            'image_num': '2'
         },
         'brems': {
             'template_url': 'brems.html',
-            'image_num': image_num
+            'image_num': '3'
         },
         'choudhury': {
             'template_url': 'choudhury.html',
-            'image_num': image_num
+            'image_num': '4'
         },
         'fabian': {
             'template_url': 'fabian.html',
-            'image_num': image_num
+            'image_num': '5'
         },
         'gallagher': {
             'template_url': 'gallagher.html',
-            'image_num': image_num
+            'image_num': '6'
         },
         'lapinel': {
             'template_url': 'lapinel.html',
-            'image_num': image_num
+            'image_num': '7'
         },
         'lee': {
             'template_url': 'lee.html',
-            'image_num': image_num
+            'image_num': '8'
         },
         'sayeed': {
             'template_url': 'sayeed.html',
-            'image_num': image_num
+            'image_num': '9'
         },
         'sibra': {
             'template_url': 'sibra.html',
-            'image_num': image_num
+            'image_num': '10'
         },
         'zimmerman': {
             'template_url': 'zimmerman.html',
-            'image_num': image_num
+            'image_num': '11'
         }
     }
     if name not in template_map.keys():
