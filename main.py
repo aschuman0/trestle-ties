@@ -145,7 +145,7 @@ def issue_three_page(name):
     template_map = {
         'thompkins': {
             'template_url': 'simone.html',
-            'image_num': '12'
+            'image_num': '14'
         },
         'marshall': {
             'template_url': 'marshall.html',
@@ -185,7 +185,7 @@ def issue_three_page(name):
         },
         'zimmerman': {
             'template_url': 'zimmerman.html',
-            'image_num': '13'
+            'image_num': '12'
         }
     }
     if name not in template_map.keys():
