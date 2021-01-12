@@ -1,0 +1,35 @@
+{% extends "base-bs4.html" %}
+{% block title %}Issue Three{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="row">
+    <div class="col-lg-7 offset-lg-4">
+        <img src="/img/three/10.png" class="img-fluid">
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <h1 class="text-right text-nowrap">Trestle Ties</h1>
+        <h3 class="text-right text-nowrap">Issue Three</h3>
+    </div>
+    <div class="col-xl-5 offset-xl-0 col-lg-5 offset-lg-0 col-md-5 offset-md-0 col-sm-5 offset-sm-0">
+        <br />
+        <h4>Contributors:</h4>
+        <ul style="list-style-type:none;">
+            <li><a href="{{ url_for('issue_three_page', name='brems') }}">Marianne Brems</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='choudhury') }}">Bibekananda Choudhury</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='fabian') }}">R. Gerry Fabian</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='gallagher') }}">Dan Gallagher</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='lapinel') }}">J.L. Lapinel</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='lee') }}">Edward Lee</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='marshall') }}">Laura S. Marshall</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='sayeed') }}">Iftekhar Sayeed</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='sibra') }}">Steve Sibra</a></li>
+            <li><a href="{{ url_for('issue_three_page', name='zimmerman') }}">Thomas Zimmerman</a></li><br />
+            <li><a href="{{ url_for('issue_three_page', name='thompkins') }}">Art By Simone Thompkins</a></li>
+        </ul>
+    </div>
+</div>
+<div class="row justify-content-center align-bottom">
+</div>
+{% endblock %}
