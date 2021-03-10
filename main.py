@@ -1,4 +1,5 @@
 from flask import Flask, render_template, abort
+from random import randrange
 
 app = Flask(__name__, static_url_path='')
 app.url_map.strict_slashes = False
@@ -196,6 +197,43 @@ def issue_three_page(name):
     return render_template(f'issues/three/{page_info.get("template_url")}',
                            img_num=page_info.get("image_num")
                            )
+
+
+@app.route('/issues/four')
+def issue_four():
+    return render_template('issues/four/index.html')
+
+
+@app.route('/issues/four/<name>')
+def issue_four_page(name):
+    template_map = {
+        'awoke': 'awoke.html',
+        'cardinaux': 'cardinaux.html',
+        'doreski': 'doreski.html',
+        'good': 'good.html',
+        'lauer': 'lauer.html',
+        'whittenberg': 'whittenberg.html',
+        'maolalai': 'maolalai.html',
+        'medeiros': 'medeiros.html',
+        'ooto': 'ooto.html',
+        'saint-marie': 'saint-marie.html',
+        'smith': 'smith.html',
+        'vermass': 'vermaas.html',
+        'walsh': 'walsh.html',
+        'withington': 'withington.html',
+        'romo': 'romo.html',
+        'pritchard': 'pritchard.html',
+        'sampsell': 'sampsell.html'
+    }
+    style_names = ['fruit_salad', 'tomato', 'spinach', 'soursop',
+                   'pumpkin', 'pickle', 'olive', 'avacado', 'coconut',
+                   'cherry']
+
+    if name not in template_map.keys():
+        abort(404)
+
+    return render_template(f'issues/four/{template_map.get(name)}',
+                           style=style_names[randrange(len(style_names))])
 
 
 @app.errorhandler(404)

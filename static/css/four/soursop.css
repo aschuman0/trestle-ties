@@ -1,0 +1,23 @@
+body {
+    background-color: #003827
+}
+.title-text {
+
+}
+.work-text {
+
+}
+.name-block {
+    background-color: #b8d3c0;
+    border-bottom: 1em solid #ee9b33;
+}
+.footer-block {
+    background-color: #003827;
+    border-top: 1em solid #b6dc65;
+}
+.footer-block a:any-link, .name-text {
+    color: whitesmoke;
+}
+.work-block {
+    background-color:#fae4e6;
+}

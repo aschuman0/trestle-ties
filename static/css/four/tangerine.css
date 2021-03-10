@@ -1,0 +1,16 @@
+body {
+    background-color: #bd3f5c 
+}
+.work-block {
+    margin-top: 25%;
+    color: whitesmoke;
+}
+.work-block a:any-link {
+    color: #f9c03b;
+}
+.title {
+    color: whitesmoke;
+}
+.subtitle {
+    color: #104990;
+}

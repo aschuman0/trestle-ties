@@ -1,0 +1,36 @@
+{% extends "issues/four/base.html" %}
+{% block title %}{ super () }{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="row name-block">
+    <div class="col">
+        <h1 class="text-center">{% block name %}{% endblock %}</h1>
+        <br />
+    </div>
+</div>
+<div class="row flex-column-reverse flex-xl-row work-block h-80">
+    <div class="col-xl-1"></div>
+    <div class="col-xl-3">
+        <br /><br /><img src="/img/four/{% block image %}{% endblock %}" class="img-fluid" style="z-index: 0;">
+    </div>
+    <div class="col-xl-1"></div>
+    <div class="col-xl-6">
+        <br />
+        {% block poems %}
+        {% endblock %}
+    </div>
+    <div class="col-xl-1"></div>
+</div>
+<div class="row justify-content-center align-bottom footer-block name-text">
+    <div class="col col-10">
+        <br />
+        {% block bio %}
+        {% endblock %}
+        <br />
+        <a href="{{ url_for('issue_four') }}">Back to Issue Four</a>
+        <div class="row-12">
+            <br />
+        </div>
+    </div>
+</div>
+{% endblock %}

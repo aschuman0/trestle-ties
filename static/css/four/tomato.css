@@ -1,0 +1,26 @@
+body {
+    background-color: #4b0505;
+}
+.title-text {
+
+}
+.work-text {
+
+}
+.name-text {
+    color: whitesmoke;
+}
+.name-block {
+    background-color: #ffce7a;
+    border-bottom: 1em solid #ff3a4f;
+}
+.footer-block {
+    background-color: #4b0505;
+    border-top: 1em solid #d84c69;
+}
+.footer-block a:any-link {
+    color: whitesmoke;
+}
+.work-block {
+    background-color: #afc1e9;
+}
