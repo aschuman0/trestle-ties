@@ -24,3 +24,7 @@ body {
 .work-block {
     background-color: #afc1e9;
 }
+.img-title {
+    color: #4b0505;
+    text-decoration: overline;
+}

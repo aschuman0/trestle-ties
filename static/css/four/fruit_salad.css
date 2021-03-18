@@ -15,3 +15,7 @@ body {
 .work-block {
     background-color: #fcc585;
 }
+.img-title {
+    color: #e57680;
+    text-decoration: overline;
+}

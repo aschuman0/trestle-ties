@@ -1,42 +1,37 @@
-{% extends "issues/four/base.html" %}
+{% extends "issues/four/base-bs4.html" %}
 {% block title %}Issue Four{% endblock %}
 {% block style %}tangerine.css{% endblock %}
 {% block content %}
 {{ super() }}
-<div class="col-lg-2"></div>
-<div class="col-lg-8">
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-6">
-            <img src="/img/four/tangerine.png" class="img-fluid">
-        </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-4 work-block">
-            <h1 class="text-left text-nowrap title">Trestle Ties</h1>
-            <h3 class="text-left text-nowrap">Issue Four</h3>
-            <h4 class="subtitle">Contributors:</h4>
-            <ul style="list-style-type:none;">
-                <li><a href="{{ url_for('issue_four_page', name='awoke') }}">Uchenna Awoke</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='cardinaux') }}">Eliot Cardinaux</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='doreski') }}">William Doreski</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='good') }}">Howie Good</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='lauer') }}">S. E. Lauer</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='maolalai') }}">DS Maolalai</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='medeiros') }}">Michael Medeiros</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='ooto') }}">Antoni Ooto</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='pritchard') }}">Suchi Pritchard</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='romo') }}">Daniel Romo</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='saint-marie') }}">Megan Saint-Marie</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='smith') }}">Michael Smith</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='vermass') }}">Jake Eduardo Vermaas</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='walsh') }}">Patricia Walsh</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='whittenberg') }}">Allison Whittenberg</a></li>
-                <li><a href="{{ url_for('issue_four_page', name='withington') }}">Keri Withington</a></li>
-                <br />
-                <li><a href="{{ url_for('issue_four_page', name='sampsell') }}">Art By Kevin Sampsell</a></li>
-            </ul>
-        </div>
+<div class="row">
+<div class="col-lg-1"></div>
+    <div class="col-lg-6 vh-100">
+        <img src="/img/four/tangerine.png" class="img-fluid">
+    </div>
+    <div class="col-lg-5 work-block">
+        <h1 class="text-left text-nowrap title">Trestle Ties</h1>
+        <h3 class="text-left text-nowrap">Issue Four</h3>
+        <h4 class="subtitle">Contributors:</h4>
+<ul style="list-style-type:none;">
+            <li><a href="{{ url_for('issue_four_page', name='awoke') }}">Uchenna Awoke</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='cardinaux') }}">Eliot Cardinaux</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='doreski') }}">William Doreski</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='good') }}">Howie Good</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='lauer') }}">S. E. Lauer</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='maolalai') }}">DS Maolalai</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='medeiros') }}">Michael Medeiros</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='ooto') }}">Antoni Ooto</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='pritchard') }}">Suchi Pritchard</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='romo') }}">Daniel Romo</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='saint-marie') }}">Megan Saint-Marie</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='smith') }}">Michael Smith</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='vermass') }}">Jake Eduardo Vermaas</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='walsh') }}">Patricia Walsh</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='whittenberg') }}">Allison Whittenberg</a></li>
+            <li><a href="{{ url_for('issue_four_page', name='withington') }}">Keri Withington</a></li>
+            <br />
+            <li><a href="{{ url_for('issue_four_page', name='sampsell') }}">Art By Kevin Sampsell</a></li>
+        </ul>
     </div>
 </div>
-<div class="col-lg-2"></div>
 {% endblock %}

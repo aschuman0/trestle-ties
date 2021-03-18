@@ -16,3 +16,7 @@ body {
     background-color: #f0efed;
     color: black;
 }
+.img-title {
+    color: #d41e11;
+    text-decoration: overline;
+}

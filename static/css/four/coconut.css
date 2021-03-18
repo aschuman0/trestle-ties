@@ -17,3 +17,7 @@ body {
     background-color: #f4ede5;
     color: black;
 }
+.img-title {
+    color: #f8a642;
+    text-decoration: overline;
+}

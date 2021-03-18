@@ -1,12 +1,6 @@
 body {
     background-color: #003827
 }
-.title-text {
-
-}
-.work-text {
-
-}
 .name-block {
     background-color: #b8d3c0;
     border-bottom: 1em solid #ee9b33;
@@ -20,4 +14,8 @@ body {
 }
 .work-block {
     background-color:#fae4e6;
+}
+.img-title {
+    color: #003827;
+    text-decoration: overline;
 }

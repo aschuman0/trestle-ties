@@ -1,4 +1,4 @@
-{% extends "issues/four/base.html" %}
+{% extends "/issues/four/base-bs4.html" %}
 {% block title %}{ super () }{% endblock %}
 {% block content %}
 {{ super() }}
@@ -8,20 +8,24 @@
         <br />
     </div>
 </div>
-<div class="row flex-column-reverse flex-xl-row work-block h-80">
-    <div class="col-xl-2"></div>
-    <div class="col-xl-4 d-flex flex-wrap align-items-center">
-        <br />
+<div class="row flex-column-reverse flex-xl-row work-block">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-4 flex-wrap align-items-center">
+        <div class="row-12">
+            <br />
+        </div>
         <img src="/img/four/{% block image %}{% endblock %}" class="img-fluid" style="z-index: 0;">
         <br />
+        <p class="img-title">{{ style|replace("_", " ")|capitalize }}</p>
     </div>
-    <div class="col-xl-1"></div>
-    <div class="col-xl-5 text-nowrap">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-4 text-nowrap min-vh-80">
         <br />
         {% block poems %}
         {% endblock %}
         <br />
     </div>
+    <div class="col-lg-1"></div>
 </div>
 <div class="row justify-content-center align-bottom footer-block name-text">
     <div class="col col-10">

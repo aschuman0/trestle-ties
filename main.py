@@ -227,7 +227,7 @@ def issue_four_page(name):
     }
     style_names = ['fruit_salad', 'tomato', 'spinach', 'soursop',
                    'pumpkin', 'pickle', 'olive', 'avacado', 'coconut',
-                   'cherry']
+                   'cherry', 'pomegranate']
 
     if name not in template_map.keys():
         abort(404)

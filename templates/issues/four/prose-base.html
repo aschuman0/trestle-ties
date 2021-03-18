@@ -1,5 +1,5 @@
-{% extends "issues/four/base.html" %}
-{% block title %}{ super () }{% endblock %}
+{% extends "/issues/four/base-bs4.html" %}
+{% block title %}{{ super () }}{% endblock %}
 {% block content %}
 {{ super() }}
 <div class="row name-block">
@@ -8,18 +8,23 @@
         <br />
     </div>
 </div>
-<div class="row flex-column-reverse flex-xl-row work-block h-80">
-    <div class="col-xl-1"></div>
-    <div class="col-xl-3">
-        <br /><br /><img src="/img/four/{% block image %}{% endblock %}" class="img-fluid" style="z-index: 0;">
+<div class="row flex-column-reverse flex-lg-row work-block h-80">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-3">
+        <div class="row-12">
+            <br />
+        </div>
+        <img src="/img/four/{% block image %}{% endblock %}" class="img-fluid" style="z-index: 0;">
+        <br />
+        <p class="img-title">{{ style|replace("_", " ")|capitalize }}</p>
     </div>
-    <div class="col-xl-1"></div>
-    <div class="col-xl-6">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-6">
         <br />
         {% block poems %}
         {% endblock %}
     </div>
-    <div class="col-xl-1"></div>
+    <div class="col-lg-1"></div>
 </div>
 <div class="row justify-content-center align-bottom footer-block name-text">
     <div class="col col-10">
