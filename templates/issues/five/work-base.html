@@ -1,0 +1,30 @@
+{% extends "base-bs4.html" %}
+{% block title %}{ super () }{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="row">
+    <div class="col">
+        <h1 class="text-left">&nbsp;&nbsp;{% block name %}{% endblock %}</h1>
+    </div>
+</div>
+<div class="row flex-column-reverse flex-xl-row">
+    <div class="col-xl-1"></div>
+    <div class="col-xl-5">
+        <br />
+        {% block work %}
+        {% endblock %}
+    </div>
+</div>
+<div class="row justify-content-center align-bottom">
+    <div class="col col-10">
+        <br />
+        <br />
+        <hr />
+        {% block bio %}
+        {% endblock %}
+        <br />
+        <a href="#">Back to Issue Five</a>
+        <br />
+    </div>
+</div>
+{% endblock %}
