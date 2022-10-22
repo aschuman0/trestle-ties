@@ -1,10 +1,11 @@
-{% extends "five/work-base.html" %}
+{% extends "issues/five/work-base.html" %}
 
 {% block title %}Poetry / Pottery / Peace{% endblock %}
 {% block name %}Laura S. Marshall <> Michael Medeiros{% endblock %}
+{% block header %} <link href="/css/five/interview.css" rel="stylesheet" type="text/css" />{% endblock %}
+
 
 {% block work %}
-<P><I>Web Editor Note: images of the horns are not yet here. They will be included in the published page. Poems from the horns are after the interview text.</i></p>
 <h2>Poetry / Pottery / Peace</h2>
 <i>A poet approaches calm and finds focus through the practice of pottery</i><br />
 <p>
@@ -435,12 +436,15 @@ Art and poetry are often interconnected by ekphrasis, inspiration, and expressio
         Maybe on nicer<br />
         days we won’t be so alone.<br />
     </p>
+    <br />
+    <hr />
+    <p><span class="bold">Michael Medeiros</span> is a poet and potter living in Amherst, Massachusetts. He is a graduate of the UMass Amherst MFA for Poets and Writers program, and served as managing editor of the literary magazine jubilat. A 2018 apprentice at the Moravian Pottery and Tile Works, he is the editor of the poetry compilation A Mighty Room: A Collection of Poems Written in Emily Dickinson’s Bedroom, and co-founder of the Tell It Slant Poetry Festival based at the Emily Dickinson Museum in Amherst, MA.</p>
+<p class="indent">Medeiros recently studied Mindfulness Based Stress Reduction through UMass Worcester Medical School and is continuing his studies, hoping to become teacher-certified in the techniques. In the future, he aims to teach Mindfulness Based Stress Reduction to others, tying it into ceramics and poetry. In the meantime, he has launched a ceramics business, Poesia Pottery, based in Florence, Mass. He is working on producing ceramics for events and installations throughout New England.</p>
+<br />
+<p><span class="bold">Laura S. Marshall</span> (she/they) is a poet and former linguist who lives outside of Albany, NY. Their work appears or is forthcoming in South Dakota Review, Bennington Review, juked, and elsewhere. She is a guest editor at Trestle Ties and a former special features editor for jubilat.</p>
+
 {% endblock %}
 
 {% block bio %}
 {{ super() }}
-<p><span class="bold">Michael Medeiros</span> is a poet and potter living in Amherst, Massachusetts. He is a graduate of the UMass Amherst MFA for Poets and Writers program, and served as managing editor of the literary magazine jubilat. A 2018 apprentice at the Moravian Pottery and Tile Works, he is the editor of the poetry compilation A Mighty Room: A Collection of Poems Written in Emily Dickinson’s Bedroom, and co-founder of the Tell It Slant Poetry Festival based at the Emily Dickinson Museum in Amherst, MA.</p>
-<p class="indent">Medeiros recently studied Mindfulness Based Stress Reduction through UMass Worcester Medical School and is continuing his studies, hoping to become teacher-certified in the techniques. In the future, he aims to teach Mindfulness Based Stress Reduction to others, tying it into ceramics and poetry. In the meantime, he has launched a ceramics business, Poesia Pottery, based in Florence, Mass. He is working on producing ceramics for events and installations throughout New England.</p>
-<br />
-<p><span class="bold">Laura S. Marshall</span> (she/they) is a poet and former linguist who lives outside of Albany, NY. Their work appears or is forthcoming in South Dakota Review, Bennington Review, juked, and elsewhere. She is a guest editor at Trestle Ties and a former special features editor for jubilat.</p>
 {% endblock %}

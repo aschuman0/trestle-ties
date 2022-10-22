@@ -4,6 +4,7 @@ from random import randrange
 app = Flask(__name__, static_url_path='')
 app.url_map.strict_slashes = False
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -234,6 +235,77 @@ def issue_four_page(name):
 
     return render_template(f'issues/four/{template_map.get(name)}',
                            style=style_names[randrange(len(style_names))])
+
+
+@app.route('/issues/five')
+def issue_five():
+    return render_template('issues/five/index.html')
+
+
+@app.route('/issues/five/<name>')
+def issue_five_page(name):
+    template_map = {
+        'brand': {
+            'template_file': 'brand.html',
+            'image': 'test1.jpg'
+        },
+        'chinedu': {
+            'template_file': 'chinedu.html',
+            'image': 'test1.jpg'
+        },
+        'connor': {
+            'template_file': 'connor.html',
+            'image': 'test1.jpg'
+        },
+        'cordeiro': {
+            'template_file': 'cordeiro.html',
+            'image': 'test1.jpg'
+        },
+        'espinor': {
+            'template_file': 'espinor.html',
+            'image': 'test1.jpg'
+        },
+        'galicia': {
+            'template_file': 'galicia.html',
+            'image': 'test1.jpg'
+        },
+        'hetherington': {
+            'template_file': 'hetherington.html',
+            'image': 'test1.jpg'
+        },
+        'marshall-medeiros': {
+            'template_file': 'interview.html',
+            'image': 'test1.jpg'
+        },
+        'janssen': {
+            'template_file': 'janssen.html',
+            'image': 'test1.jpg'
+        },
+        'maolalai': {
+            'template_file': 'maolalai.html',
+            'image': 'test1.jpg'
+        },
+        'mcrae': {
+            'template_file': 'mcrae.html',
+            'image': 'test1.jpg'
+        },
+        'perry': {
+            'template_file': 'perry.html',
+            'image': 'test1.jpg'
+        },
+        'salveson': {
+            'template_file': 'salveson.html',
+            'image': 'test1.jpg'
+        },
+    }
+
+    render_info = template_map.get(name)
+    if not render_info:
+        about(404)
+
+    return render_template(
+        f'issues/five/{render_info.get("template_file")}', img=render_info.get('image')
+    )
 
 
 @app.errorhandler(404)
