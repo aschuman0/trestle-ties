@@ -1,14 +1,5 @@
 .work_content {
     padding-right: 3rem;
     white-space: unset;
-    height: 1300vh;
+    height: 1800vh;
 } 
-
-.footer {
-    background: linear-gradient(to top, white 70% 30%, transparent);
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-
-}

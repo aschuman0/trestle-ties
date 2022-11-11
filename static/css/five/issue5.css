@@ -40,20 +40,32 @@ span.bold {
     padding-left: 3rem;
 }
 
+img.detail {
+    padding: 3px;
+    margin: 10px;
+    border: thin solid black;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+img.cover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+}
+
 
 .work_content {
     padding-right: 3rem;
     white-space: nowrap;
     height: 200vh;
+
 } 
 
 .footer {
-    background: linear-gradient(to top, white 50% 40%, transparent);
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-
+    white-space: normal;
+    background: inherit;
 }
 
 .show_bg {
@@ -65,3 +77,19 @@ span.bold {
     align-self: flex-start;
 }
 
+.cover {
+    height: 80vh;
+}
+
+.title {
+    margin-left: 2rem; 
+    padding-top: 5rem;
+}
+
+.subtitle {
+    margin-left: 4rem;
+}
+
+.contrib {
+    margin-left: 5rem;
+}

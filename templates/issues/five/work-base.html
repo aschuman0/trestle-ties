@@ -4,23 +4,20 @@
 {{ super() }}
 <div class="row justify-content-end flex-xl-row work_content">
     <div class="col-5"></div>
-    <div class="col-2 spacer"></div>
     <div class="col-5">
         <h1>{% block name %}{% endblock %}</h1>
         <br />
         {% block work %}
         {% endblock %}
-    </div>
-</div>
-<div class="row justify-content-center align-bottom footer">
-    <div class="col col-10">
-        <br />
-        <br />
-        <hr />
-        {% block bio %}
-        {% endblock %}
-        <br />
-        <a href="{{ url_for('issue_five') }}">Back to Issue Five</a> <!-- TODO link this up to main -->
+        <div class="align-bottom footer">
+            <br />
+            <br />
+            <hr />
+            {% block bio %}
+            {% endblock %}
+            <br />
+            <a href="{{ url_for('issue_five') }}">Back to Issue Five</a>
+        </div>
     </div>
 </div>
 {% endblock %}
