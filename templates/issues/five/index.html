@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet" type='text/css'>
+    <link href="/css/five/issue5.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <title>Trestle Ties - {% block title %}{% endblock %}</title>
+    {% block header %}
+    {% endblock %}
+</head>
+<body>
+<div class="container-fluid show_bg cover" style="background-image: linear-gradient(to left, white 20% 20%, white 30%, transparent), url('/img/five/cover.jpg'); height: 100vh;">
+    
+    <div>
+        <h1 class="text-left title text-nowrap">Trestle Ties</h1>
+        <h3 class="text-left subtitle text-nowrap">Issue Five</h3>
+    </div>
+    <div class="contrib">
+        <h4 class="">Contributors:</h4>
+        <ul style="list-style-type:none;">
+            <li><a href="{{ url_for('issue_five_page', name='brand') }}">Sy Brand</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='chinedu') }}">Onyedikachi Chinedu</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='connolly') }}">CJ Connolly</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='connor') }}">Lynn B. Connor</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='cordeiro') }}">Will Cordeiro</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='espinor') }}">Megan Espinor</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='galicia') }}">Cid Galicia</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='hetherington') }}">Keary Hetherington</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='janssen') }}">Marc Janssen</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='maolalai') }}">DS Maolalai</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='marshall-medeiros') }}">Laura Marshall & Michael Medeiros</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='mcrae') }}">Bruce McRae</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='perry') }}">Alan Perry</a></li>
+            <li><a href="{{ url_for('issue_five_page', name='salveson') }}">Chris Salveson</a></li>
+            <br />
+            <li>Art By Michael Medeiros</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+{% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+{% endblock %}
+</html>

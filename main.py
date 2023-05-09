@@ -4,6 +4,7 @@ from random import randrange
 app = Flask(__name__, static_url_path='')
 app.url_map.strict_slashes = False
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -234,6 +235,68 @@ def issue_four_page(name):
 
     return render_template(f'issues/four/{template_map.get(name)}',
                            style=style_names[randrange(len(style_names))])
+
+
+@app.route('/issues/five')
+def issue_five():
+    return render_template('issues/five/index.html')
+
+
+@app.route('/issues/five/<name>')
+def issue_five_page(name):
+    template_map = {
+        'brand': {
+            'template_file': 'brand.html',
+        },
+        'chinedu': {
+            'template_file': 'chinedu.html',
+        },
+        'connolly': {
+            'template_file': 'connolly.html',
+        },
+        'connor': {
+            'template_file': 'connor.html',
+        },
+        'cordeiro': {
+            'template_file': 'cordeiro.html',
+        },
+        'espinor': {
+            'template_file': 'espinor.html',
+        },
+        'galicia': {
+            'template_file': 'galicia.html',
+        },
+        'hetherington': {
+            'template_file': 'hetherington.html',
+        },
+        'marshall-medeiros': {
+            'template_file': 'interview.html',
+        },
+        'janssen': {
+            'template_file': 'janssen.html',
+        },
+        'maolalai': {
+            'template_file': 'maolalai.html',
+        },
+        'mcrae': {
+            'template_file': 'mcrae.html',
+        },
+        'perry': {
+            'template_file': 'perry.html',
+        },
+        'salveson': {
+            'template_file': 'salveson.html',
+        },
+    }
+
+    render_info = template_map.get(name)
+    if not render_info:
+        about(404)
+
+    return render_template(
+        f'issues/five/{render_info.get("template_file")}',
+        img=f"{randrange(1,14)}.jpg"
+    )
 
 
 @app.errorhandler(404)

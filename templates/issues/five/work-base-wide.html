@@ -1,0 +1,22 @@
+{% extends "issues/five/base-bs4.html" %}
+{% block title %}{ super () }{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="row justify-content-end flex-xl-row work_content">
+    <div class="col-5"></div>
+    <div class="col-6">
+        <h1>{% block name %}{% endblock %}</h1>
+        <br />
+        {% block work %}
+        {% endblock %}
+        <div class="align-bottom footer">
+            <br />
+            <br />
+            <hr />
+            {% block bio %}
+            {% endblock %}
+            <br />
+            <a href="{{ url_for('issue_five') }}">Back to Issue Five</a>
+        </div>
+</div>
+{% endblock %}
